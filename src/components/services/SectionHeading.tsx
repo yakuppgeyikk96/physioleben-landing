@@ -17,7 +17,7 @@ export function SectionHeading({ title, subtitle, description, align = "center" 
         {title}
       </h2>
       {description && (
-        <p className="text-primary-700/60 leading-relaxed">{description}</p>
+        <p className="text-primary-700/80 leading-relaxed">{description}</p>
       )}
     </div>
   );

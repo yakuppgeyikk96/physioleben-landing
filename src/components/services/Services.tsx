@@ -40,7 +40,7 @@ export function Services() {
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-primary-900">
             Ganzheitliche Behandlungen für Ihr Wohlbefinden
           </h2>
-          <p className="text-primary-700/60 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p className="text-primary-700/80 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Von klassischer Krankengymnastik bis hin zu spezialisierten
             Therapieformen — wir bieten Ihnen ein breites Spektrum an
             Behandlungsmöglichkeiten.

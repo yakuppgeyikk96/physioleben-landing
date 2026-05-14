@@ -15,7 +15,7 @@ export function ServiceCard({ icon: Icon, title, description }: ServiceCardProps
         </div>
         <h3 className="font-semibold text-primary-900">{title}</h3>
       </div>
-      <p className="text-sm text-primary-700/60 leading-relaxed">{description}</p>
+      <p className="text-sm text-primary-700/80 leading-relaxed">{description}</p>
     </div>
   );
 }
