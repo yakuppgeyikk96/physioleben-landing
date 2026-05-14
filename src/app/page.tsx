@@ -1,6 +1,7 @@
 import { HeroActions } from "@/components/hero/HeroActions";
 import { HeroCarousel } from "@/components/hero/HeroCarousel";
 import { Services } from "@/components/services/Services";
+import { About } from "@/components/about/About";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
                 <br />
                 Besser Fühlen.
               </h1>
-              <p className="text-lg sm:text-xl text-primary-700/70 leading-relaxed max-w-lg mx-auto lg:mx-0">
+              <p className="text-lg sm:text-xl text-primary-700/80 leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Ihre professionelle Physiotherapie-Praxis in Selm. Individuelle
                 Behandlungen für Ihre Gesundheit und Ihr Wohlbefinden.
               </p>
@@ -31,6 +32,7 @@ export default function Home() {
       </section>
 
       <Services />
+      <About />
     </main>
   );
 }
