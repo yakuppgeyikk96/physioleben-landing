@@ -21,6 +21,10 @@
   --font-serif: var(--font-dm-serif-display);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-primary-100);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
