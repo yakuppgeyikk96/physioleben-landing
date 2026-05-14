@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
 import { CTAButton } from "./CTAButton";
@@ -9,16 +9,28 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav
+      className={`sticky top-0 z-50 transition-colors duration-300 ${
+        isScrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div className="flex items-center justify-between">
           <Logo />
 
-          <NavLinks className="hidden md:flex items-center gap-8" />
+          <NavLinks className="hidden lg:flex items-center gap-1" />
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <CTAButton />
           </div>
 
@@ -27,12 +39,12 @@ export function Navbar() {
             onToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           />
         </div>
-      </div>
 
-      <MobileMenu
-        isOpen={isMobileMenuOpen}
-        onClose={() => setIsMobileMenuOpen(false)}
-      />
-    </header>
+        <MobileMenu
+          isOpen={isMobileMenuOpen}
+          onClose={() => setIsMobileMenuOpen(false)}
+        />
+      </div>
+    </nav>
   );
 }

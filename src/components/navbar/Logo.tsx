@@ -3,10 +3,10 @@ import Link from "next/link";
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2">
-      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary">
+      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white">
         <svg
-          width="24"
-          height="24"
+          width="22"
+          height="22"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +20,10 @@ export function Logo() {
         </svg>
       </div>
       <div className="flex flex-col leading-tight">
-        <span className="text-lg font-bold text-primary tracking-tight">
-          Physio<span className="text-secondary">leben</span>
+        <span className="text-lg font-bold text-primary-800 tracking-tight">
+          Physio<span className="text-primary-500">leben</span>
         </span>
-        <span className="text-[10px] text-muted tracking-wide uppercase">
+        <span className="text-[10px] text-primary-600/60 tracking-wide uppercase">
           Aktiv Leben, Besser Fühlen
         </span>
       </div>
