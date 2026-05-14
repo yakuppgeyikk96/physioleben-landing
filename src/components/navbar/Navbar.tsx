@@ -19,32 +19,34 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div className="flex items-center justify-between">
-          <Logo />
+    <>
+      <nav
+        className={`sticky top-0 z-50 transition-colors duration-300 ${
+          isScrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex items-center justify-between">
+            <Logo />
 
-          <NavLinks className="hidden lg:flex items-center gap-1" />
+            <NavLinks className="hidden lg:flex items-center gap-1" />
 
-          <div className="hidden lg:block">
-            <CTAButton />
+            <div className="hidden lg:block">
+              <CTAButton />
+            </div>
+
+            <MobileMenuButton
+              isOpen={isMobileMenuOpen}
+              onToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            />
           </div>
-
-          <MobileMenuButton
-            isOpen={isMobileMenuOpen}
-            onToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          />
         </div>
+      </nav>
 
-        <MobileMenu
-          isOpen={isMobileMenuOpen}
-          onClose={() => setIsMobileMenuOpen(false)}
-        />
-      </div>
-    </nav>
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
+    </>
   );
 }

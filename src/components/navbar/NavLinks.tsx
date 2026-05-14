@@ -6,9 +6,10 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 interface NavLinksProps {
   onClickLink?: () => void;
   className?: string;
+  size?: "sm" | "base";
 }
 
-export function NavLinks({ onClickLink, className = "" }: NavLinksProps) {
+export function NavLinks({ onClickLink, className = "", size = "sm" }: NavLinksProps) {
   const activeHref = useActiveSection(NAV_ITEMS.map((item) => item.href));
 
   return (
@@ -20,7 +21,7 @@ export function NavLinks({ onClickLink, className = "" }: NavLinksProps) {
             <a
               href={item.href}
               onClick={onClickLink}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`block px-4 py-2.5 rounded-full ${size === "base" ? "text-base" : "text-sm"} font-medium transition-colors duration-200 ${
                 isActive
                   ? "bg-primary-500 text-white"
                   : "text-primary-800 hover:text-primary-600"
