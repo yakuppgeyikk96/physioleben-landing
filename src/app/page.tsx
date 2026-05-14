@@ -1,5 +1,6 @@
 import { HeroActions } from "@/components/hero/HeroActions";
 import { HeroCarousel } from "@/components/hero/HeroCarousel";
+import { Services } from "@/components/services/Services";
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Services />
     </main>
   );
 }
