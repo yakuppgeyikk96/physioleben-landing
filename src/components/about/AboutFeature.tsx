@@ -12,9 +12,9 @@ export function AboutFeature({
   description,
 }: AboutFeatureProps) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="group flex flex-col gap-2 bg-white/40 rounded-xl p-4 hover:bg-white/60 transition-colors duration-300">
       <div className="flex items-center gap-3">
-        <div className="shrink-0 w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center text-primary-600">
+        <div className="shrink-0 w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center text-primary-600 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-300">
           <Icon size={20} />
         </div>
         <h3 className="font-semibold text-primary-900">{title}</h3>

@@ -4,7 +4,7 @@ import { AboutFeature } from "./AboutFeature";
 
 export function About() {
   return (
-    <section id="ueber-uns" className="py-20 sm:py-28">
+    <section id="ueber-uns" className="py-20 sm:py-28 bg-white/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Image */}
@@ -16,6 +16,8 @@ export function About() {
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-linear-to-t from-primary-900/30 to-transparent" />
             {/* Accent overlay corner */}
             <div className="absolute bottom-0 right-0 bg-primary-500 text-white px-6 py-4 rounded-tl-2xl">
               <span className="font-serif text-2xl">Physio</span>
