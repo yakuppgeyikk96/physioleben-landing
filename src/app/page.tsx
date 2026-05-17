@@ -12,10 +12,16 @@ export default function Home() {
           {/* Left: Text */}
           <div className="flex flex-col gap-10 items-center lg:items-start text-center lg:text-left">
             <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
+                <div className="w-12 h-0.5 rounded-full bg-primary-400" />
+                <span className="text-base font-semibold tracking-widest uppercase text-primary-400">
+                  Willkommen bei Physioleben
+                </span>
+              </div>
               <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-primary-900 leading-tight">
                 Aktiv Leben,
                 <br />
-                Besser Fühlen.
+                <span className="text-primary-500">Besser Fühlen.</span>
               </h1>
               <p className="text-lg sm:text-xl text-primary-700/80 leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Ihre professionelle Physiotherapie-Praxis in Selm. Individuelle

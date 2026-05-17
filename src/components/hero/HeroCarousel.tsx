@@ -23,6 +23,17 @@ export function HeroCarousel() {
 
   return (
     <div className="relative w-full h-full min-h-100 lg:min-h-0">
+      {/* Decorative ring behind blob */}
+      <div className="absolute -top-6 -right-6 w-[105%] h-[105%] rounded-full border-2 border-dashed border-primary-300/40" />
+      {/* Decorative dots pattern */}
+      <div
+        className="absolute -bottom-8 -left-8 w-24 h-24 opacity-20"
+        style={{
+          backgroundImage: "radial-gradient(circle, var(--color-primary-500) 2px, transparent 2px)",
+          backgroundSize: "12px 12px",
+        }}
+      />
+
       <svg className="absolute" width="0" height="0">
         <defs>
           <clipPath id="hero-blob" clipPathUnits="objectBoundingBox">
