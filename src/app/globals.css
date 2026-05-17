@@ -17,8 +17,8 @@
 
   --color-muted: #6b7280;
 
-  --font-sans: var(--font-plus-jakarta-sans);
-  --font-serif: var(--font-dm-serif-display);
+  --font-sans: var(--font-lora);
+  --font-serif: var(--font-lora);
 }
 
 html {
