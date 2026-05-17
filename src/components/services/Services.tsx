@@ -27,7 +27,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
 
 export function Services() {
   return (
-    <section id="leistungen" className="py-20 sm:py-28">
+    <section id="leistungen" className="py-20 sm:py-28 bg-white/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading with decorative line */}
         <div className="flex flex-col gap-4 mb-14 max-w-3xl">
