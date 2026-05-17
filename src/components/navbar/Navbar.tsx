@@ -20,12 +20,14 @@ export function Navbar() {
 
   return (
     <>
-      <nav
-        className={`sticky top-0 z-50 transition-colors duration-300 ${
-          isScrolled ? "bg-white/80 backdrop-blur-sm shadow-sm" : "bg-transparent"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div className="sticky top-0 z-50 py-3 px-4 sm:px-6 lg:px-8">
+        <nav
+          className={`max-w-6xl mx-auto rounded-full px-4 sm:px-6 py-3 transition-all duration-300 ${
+            isScrolled
+              ? "bg-white/80 backdrop-blur-md shadow-lg shadow-primary-900/5"
+              : "bg-white/40 backdrop-blur-sm"
+          }`}
+        >
           <div className="flex items-center justify-between">
             <Logo />
 
@@ -40,8 +42,8 @@ export function Navbar() {
               onToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             />
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <MobileMenu
         isOpen={isMobileMenuOpen}

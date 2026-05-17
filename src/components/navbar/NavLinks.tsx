@@ -26,7 +26,7 @@ export function NavLinks({ onClickLink, className = "", size = "sm" }: NavLinksP
               }}
               className={`block px-4 py-2.5 rounded-full ${size === "base" ? "text-base" : "text-sm"} font-medium transition-colors duration-200 ${
                 isActive
-                  ? "bg-primary-500 text-white"
+                  ? "bg-primary-100 text-primary-700 font-semibold"
                   : "text-primary-800 hover:text-primary-600"
               }`}
             >
