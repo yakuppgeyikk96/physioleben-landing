@@ -4,7 +4,7 @@ export function ContactMap() {
   const query = encodeURIComponent(CONTACT.address);
 
   return (
-    <div className="rounded-2xl overflow-hidden border border-primary-100 h-full min-h-80">
+    <div className="rounded-2xl overflow-hidden border border-primary-100 h-full min-h-80 shadow-lg shadow-primary-900/5">
       <iframe
         title="Physioleben Standort"
         src={`https://www.google.com/maps?q=${query}&output=embed`}
