@@ -140,10 +140,10 @@ export function Footer() {
             vorbehalten.
           </p>
           <div className="flex gap-6 text-sm text-primary-600/70">
-            <a href="#" className="hover:text-primary-900 transition-colors">
+            <a href="/impressum" className="hover:text-primary-900 transition-colors">
               Impressum
             </a>
-            <a href="#" className="hover:text-primary-900 transition-colors">
+            <a href="/datenschutz" className="hover:text-primary-900 transition-colors">
               Datenschutz
             </a>
           </div>
