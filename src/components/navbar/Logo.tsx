@@ -1,32 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2">
-      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white">
-        <svg
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M12 2C10.5 4 8 6 8 9c0 2 1 3 2 4l-3 7c-.2.5.1 1 .6 1h8.8c.5 0 .8-.5.6-1l-3-7c1-1 2-2 2-4 0-3-2.5-5-4-7z"
-            fill="white"
-          />
-          <circle cx="12" cy="6" r="2" fill="white" opacity="0.8" />
-        </svg>
-      </div>
-      <div className="flex flex-col leading-tight">
-        <span className="text-lg font-bold text-primary-800 tracking-tight">
-          Physio<span className="text-primary-500">leben</span>
-        </span>
-        <span className="text-[10px] text-primary-600/60 tracking-wide uppercase">
-          Aktiv Leben, Besser Fühlen
-        </span>
-      </div>
+    <Link href="/" className="flex items-center">
+      <Image
+        src="/images/logo_physio_leben.png"
+        alt="Physioleben"
+        width={160}
+        height={40}
+        className="h-8 w-auto"
+        priority
+      />
     </Link>
   );
 }

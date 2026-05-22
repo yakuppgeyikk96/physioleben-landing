@@ -23,13 +23,36 @@ export function HeroCarousel() {
 
   return (
     <div className="relative w-full h-full min-h-100 lg:min-h-0">
-      {/* Decorative ring behind blob */}
-      <div className="absolute -top-6 -right-6 w-[105%] h-[105%] rounded-full border-2 border-dashed border-primary-300/40" />
+      {/* Decorative fill behind blob */}
+      <svg
+        className="absolute w-[102%] h-[102%]"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M44,2 C58,-2 78,4 90,15 C102,26 104,42 98,58 C92,74 96,88 86,95 C76,102 58,102 42,97 C26,92 12,88 6,74 C0,60 -2,42 4,28 C10,14 30,6 44,2"
+          fill="#3aade0"
+          fillOpacity="0.6"
+        />
+      </svg>
+
+      <svg
+        className="absolute -left-4 w-[102%] h-[102%]"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M44,2 C58,-2 78,4 90,15 C102,26 104,42 98,58 C92,74 96,88 86,95 C76,102 58,102 42,97 C26,92 12,88 6,74 C0,60 -2,42 4,28 C10,14 30,6 44,2"
+          fill="#4a9e3d"
+          fillOpacity="0.6"
+        />
+      </svg>
       {/* Decorative dots pattern */}
       <div
         className="absolute -bottom-8 -left-8 w-24 h-24 opacity-20"
         style={{
-          backgroundImage: "radial-gradient(circle, var(--color-primary-500) 2px, transparent 2px)",
+          backgroundImage:
+            "radial-gradient(circle, var(--color-secondary-500) 2px, transparent 2px)",
           backgroundSize: "12px 12px",
         }}
       />

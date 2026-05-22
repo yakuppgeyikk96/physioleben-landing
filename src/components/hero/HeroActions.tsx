@@ -13,7 +13,7 @@ export function HeroActions() {
       </a>
       <a
         href="#leistungen"
-        className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-primary-500 px-8 py-4 text-base font-semibold text-primary-700 hover:bg-primary-50 hover:scale-105 transition-all duration-200"
+        className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-secondary-500 px-8 py-4 text-base font-semibold text-secondary-600 hover:bg-secondary-100 hover:scale-105 transition-all duration-200"
       >
         <Stethoscope size={20} />
         Unsere Leistungen

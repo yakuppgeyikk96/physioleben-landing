@@ -27,13 +27,13 @@ const ICON_MAP: Record<string, LucideIcon> = {
 
 export function Services() {
   return (
-    <section id="leistungen" className="py-20 sm:py-28 bg-white/40">
+    <section id="leistungen" className="py-20 sm:py-28 bg-primary-200/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading with decorative line */}
         <div className="flex flex-col gap-4 mb-14 max-w-3xl">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-0.5 rounded-full bg-primary-400" />
-            <span className="text-base font-semibold tracking-widest uppercase text-primary-400">
+            <div className="w-12 h-0.5 rounded-full bg-secondary-500" />
+            <span className="text-base font-semibold tracking-widest uppercase text-secondary-500">
               Unsere Therapieleistungen
             </span>
           </div>
