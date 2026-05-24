@@ -13,8 +13,8 @@ export function Contact() {
               Kontakt & Anfahrt
             </span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-primary-900">
-            Wir freuen uns auf Sie
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-primary-600">
+            Wir freuen uns auf <span className="text-secondary-500">Sie</span>
           </h2>
           <p className="text-primary-700/80 leading-relaxed max-w-2xl">
             Vereinbaren Sie einen Termin oder besuchen Sie uns in unserer Praxis

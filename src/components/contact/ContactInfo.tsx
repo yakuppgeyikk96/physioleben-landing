@@ -46,7 +46,7 @@ export function ContactInfo() {
           rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
           className="group flex items-center gap-4 bg-white/40 rounded-xl p-4 border border-transparent hover:border-[#8dcdef] hover:bg-white/60 transition-all duration-300"
         >
-          <div className="shrink-0 w-11 h-11 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 group-hover:bg-primary-500 group-hover:text-white transition-colors duration-300">
+          <div className="shrink-0 w-11 h-11 rounded-xl bg-primary-100 flex items-center justify-center text-primary-600 group-hover:bg-secondary-500 group-hover:text-white transition-colors duration-300">
             <item.icon size={20} />
           </div>
           <div>

@@ -18,7 +18,7 @@ export default function Home() {
                   Willkommen bei Physioleben
                 </span>
               </div>
-              <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-primary-900 leading-tight">
+              <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-primary-600 leading-tight">
                 Aktiv Leben,
                 <br />
                 <span className="text-secondary-500">Besser Fühlen.</span>

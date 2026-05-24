@@ -4,7 +4,7 @@ import { AboutFeature } from "./AboutFeature";
 
 export function About() {
   return (
-    <section id="ueber-uns" className="py-20 sm:py-28 bg-primary-200/40">
+    <section id="ueber-uns" className="py-20 sm:py-28 bg-white/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Image */}
@@ -40,8 +40,8 @@ export function About() {
                   Über Uns
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-primary-900">
-                Ihre Gesundheit liegt uns am Herzen
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-primary-600">
+                Ihre <span className="text-secondary-500">Gesundheit</span> liegt uns am Herzen
               </h2>
               <p className="text-primary-700/80 leading-relaxed">
                 Bei Physioleben in Selm verbinden wir fachliche Kompetenz mit

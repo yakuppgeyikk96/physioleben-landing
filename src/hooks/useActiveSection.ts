@@ -18,7 +18,7 @@ export function useActiveSection(hrefs: readonly string[]) {
   }, []);
 
   useEffect(() => {
-    const ids = hrefs.map((href) => href.replace("#", ""));
+    const ids = hrefs.map((href) => href.replace("/#", ""));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,7 +26,7 @@ export function useActiveSection(hrefs: readonly string[]) {
 
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            setActiveHref(`#${entry.target.id}`);
+            setActiveHref(`/#${entry.target.id}`);
           }
         }
       },
