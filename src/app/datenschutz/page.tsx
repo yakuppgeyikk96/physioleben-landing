@@ -71,7 +71,22 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="text-xl font-semibold text-primary-900 mb-3">
-              4. Google Maps
+              4. SSL-/TLS-Verschlüsselung
+            </h2>
+            <p>
+              Diese Seite nutzt aus Sicherheitsgründen eine
+              SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen
+              Sie daran, dass die Adresszeile des Browsers von „http://" auf
+              „https://" wechselt und an dem Schloss-Symbol in Ihrer
+              Browserzeile. Wenn die SSL-/TLS-Verschlüsselung aktiviert ist,
+              können die Daten, die Sie an uns übermitteln, nicht von Dritten
+              mitgelesen werden.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-primary-900 mb-3">
+              5. Google Maps
             </h2>
             <p>
               Diese Seite nutzt über eine Einbindung (iframe) den Kartendienst
@@ -95,7 +110,7 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="text-xl font-semibold text-primary-900 mb-3">
-              5. Ihre Rechte
+              6. Ihre Rechte
             </h2>
             <p>
               Sie haben jederzeit das Recht auf unentgeltliche Auskunft über
@@ -109,7 +124,58 @@ export default function Datenschutz() {
 
           <section>
             <h2 className="text-xl font-semibold text-primary-900 mb-3">
-              6. Cookies
+              7. Widerruf Ihrer Einwilligung zur Datenverarbeitung
+            </h2>
+            <p>
+              Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen
+              Einwilligung möglich. Sie können eine bereits erteilte Einwilligung
+              jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per
+              E-Mail an{" "}
+              <a
+                href={`mailto:${CONTACT.email}`}
+                className="text-secondary-500 hover:underline"
+              >
+                {CONTACT.email}
+              </a>
+              . Die Rechtmäßigkeit der bis zum Widerruf erfolgten
+              Datenverarbeitung bleibt vom Widerruf unberührt.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-primary-900 mb-3">
+              8. Beschwerderecht bei der zuständigen Aufsichtsbehörde
+            </h2>
+            <p>
+              Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein
+              Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Die
+              zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist
+              die Landesbeauftragte für Datenschutz und Informationsfreiheit
+              Nordrhein-Westfalen (LDI NRW).
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-primary-900 mb-3">
+              9. Speicherdauer
+            </h2>
+            <p>
+              Sofern innerhalb dieser Datenschutzerklärung keine speziellere
+              Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen
+              Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt.
+              Die Speicherdauer von Server-Log-Dateien richtet sich nach den
+              Vorgaben unseres Hosting-Anbieters. Wenn Sie uns per Telefon,
+              E-Mail oder WhatsApp kontaktieren, werden Ihre Daten (z.&nbsp;B.
+              Name, Kontaktdaten, Inhalt der Anfrage) zum Zwecke der Bearbeitung
+              Ihres Anliegens gespeichert und nach Abschluss des Vorgangs
+              gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten
+              bestehen.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-primary-900 mb-3">
+              10. Cookies
             </h2>
             <p>
               Unsere Website verwendet keine eigenen Cookies. Durch die
