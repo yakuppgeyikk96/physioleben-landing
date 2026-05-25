@@ -25,22 +25,20 @@ export function TopBar() {
               <MailIcon size={13} />
               {CONTACT.email}
             </a>
+            <a
+              href={CONTACT.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 hover:text-white/80 transition-colors"
+            >
+              <WhatsAppIcon size={13} />
+              <span className="hidden sm:inline">{CONTACT.whatsapp}</span>
+            </a>
             <span className="hidden lg:flex items-center gap-2 pl-4">
               <LocationIcon size={13} />
               {CONTACT.address}
             </span>
           </div>
-
-          {/* Right: Social */}
-          <a
-            href={CONTACT.whatsappHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-7 h-7 rounded-full hover:bg-white/10 transition-colors"
-            aria-label="WhatsApp"
-          >
-            <WhatsAppIcon size={15} />
-          </a>
         </div>
       </div>
     </div>

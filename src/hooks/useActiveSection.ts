@@ -18,6 +18,17 @@ export function useActiveSection(hrefs: readonly string[]) {
   }, []);
 
   useEffect(() => {
+    const onLogoClick = () => {
+      setActiveHref(hrefs[0]);
+      isClickScrolling.current = true;
+      if (clickTimeout.current) clearTimeout(clickTimeout.current);
+      clickTimeout.current = setTimeout(() => {
+        isClickScrolling.current = false;
+      }, 1000);
+    };
+
+    window.addEventListener("logo-click", onLogoClick);
+
     const ids = hrefs.map((href) => href.replace("/#", ""));
 
     const observer = new IntersectionObserver(
@@ -40,6 +51,7 @@ export function useActiveSection(hrefs: readonly string[]) {
 
     return () => {
       observer.disconnect();
+      window.removeEventListener("logo-click", onLogoClick);
       if (clickTimeout.current) clearTimeout(clickTimeout.current);
     };
   }, [hrefs]);
