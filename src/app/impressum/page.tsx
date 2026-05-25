@@ -33,17 +33,6 @@ export default function Impressum() {
 
           <section>
             <h2 className="text-xl font-semibold text-primary-900 mb-3">
-              Berufsbezeichnung und berufsrechtliche Regelungen
-            </h2>
-            <p>
-              Berufsbezeichnung: Physiotherapeut/in
-              <br />
-              Zuständige Aufsichtsbehörde: Gesundheitsamt Kreis Unna
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-primary-900 mb-3">
               Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
             </h2>
             <p>
@@ -51,6 +40,13 @@ export default function Impressum() {
               <br />
               {CONTACT.address}
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-primary-900 mb-3">
+              Vertreten durch
+            </h2>
+            <p>Halil Sari</p>
           </section>
 
           <section>
@@ -77,6 +73,56 @@ export default function Impressum() {
               Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
               oder Betreiber der Seiten verantwortlich.
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-primary-900 mb-3">
+              Bildnachweis
+            </h2>
+            <p className="mb-2">
+              Die auf dieser Website verwendeten Bilder stammen von{" "}
+              <a
+                href="https://www.pexels.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary-500 hover:underline"
+              >
+                Pexels
+              </a>
+              :
+            </p>
+            <ul className="list-disc list-inside flex flex-col gap-1">
+              <li>
+                <a
+                  href="https://www.pexels.com/photo/woman-in-white-dress-up-shirt-touching-the-back-of-knees-of-woman-in-white-t-shirt-5793651/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary-500 hover:underline"
+                >
+                  Foto von Anna Shvets
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.pexels.com/photo/crop-osteopath-checking-up-arm-joint-of-unrecognizable-female-patient-4506072/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary-500 hover:underline"
+                >
+                  Foto von Karolina Kaboompics
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.pexels.com/photo/patient-exercising-under-care-of-therapist-20860624/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary-500 hover:underline"
+                >
+                  Foto von Physio Roots
+                </a>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
