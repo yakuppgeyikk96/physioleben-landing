@@ -1,16 +1,21 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
 
 export function Logo() {
   return (
-    <Link
+    <a
       href="/#hero"
       className="flex items-center"
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         const hero = document.getElementById("hero");
         if (hero) {
           hero.scrollIntoView({ behavior: "smooth" });
+          window.history.pushState(null, "", "/#hero");
           window.dispatchEvent(new Event("logo-click"));
+        } else {
+          window.location.href = "/#hero";
         }
       }}
     >
@@ -22,6 +27,6 @@ export function Logo() {
         className="h-8 w-auto"
         priority
       />
-    </Link>
+    </a>
   );
 }
