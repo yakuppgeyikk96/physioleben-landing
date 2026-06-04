@@ -29,7 +29,7 @@ const CONTACT_ITEMS = [
 ];
 
 const HOURS = [
-  { day: "Mo — Fr", time: "08:00 — 18:00" },
+  { day: "Mo — Fr", time: "09:00 — 18:00" },
   { day: "Sa", time: "Nach Vereinbarung" },
   { day: "So", time: "Geschlossen" },
 ];

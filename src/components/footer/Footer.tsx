@@ -102,7 +102,7 @@ export function Footer() {
             <div className="flex flex-col gap-2">
               <div className="flex justify-between text-sm">
                 <span className="text-white/70">Mo — Fr</span>
-                <span className="text-white font-medium">08:00 — 18:00</span>
+                <span className="text-white font-medium">09:00 — 18:00</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-white/70">Sa</span>
