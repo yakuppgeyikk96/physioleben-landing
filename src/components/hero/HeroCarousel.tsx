@@ -79,7 +79,7 @@ export function HeroCarousel() {
               index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
             priority={index === 0}
-            sizes="(min-width: 1024px) 50vw, 100vw"
+            sizes="50vw"
           />
         ))}
       </div>

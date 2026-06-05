@@ -13,7 +13,7 @@ export function About() {
               src="/images/about.jpg"
               alt="Physioleben Praxis in Selm"
               fill
-              loading="eager"
+              priority
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
