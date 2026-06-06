@@ -25,7 +25,7 @@ export function Footer() {
             </p>
             <a
               href={CONTACT.phoneHref}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-secondary-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-secondary-400 hover:scale-105 transition-all duration-200 w-fit"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-primary-700 hover:bg-primary-50 hover:scale-105 transition-all duration-200 w-fit"
             >
               <CalendarCheck size={16} />
               Termin vereinbaren
@@ -122,11 +122,11 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-sm text-white/50">
+          <p className="text-sm text-white/70">
             &copy; {new Date().getFullYear()} Physioleben. Alle Rechte
             vorbehalten.
           </p>
-          <div className="flex gap-6 text-sm text-white/50">
+          <div className="flex gap-6 text-sm text-white/70">
             <a href="/impressum" className="hover:text-white transition-colors">
               Impressum
             </a>
