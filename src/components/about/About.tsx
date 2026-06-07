@@ -22,7 +22,7 @@ export function About() {
             {/* Accent overlay corner */}
             <div className="absolute bottom-0 right-0 bg-primary-500 px-5 py-3 rounded-tl-2xl">
               <Image
-                src="/images/logo_physio_leben.png"
+                src="/images/logo_physio_leben.webp"
                 alt="Physioleben"
                 width={120}
                 height={30}

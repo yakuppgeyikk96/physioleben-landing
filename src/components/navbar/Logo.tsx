@@ -20,7 +20,7 @@ export function Logo() {
       }}
     >
       <Image
-        src="/images/logo_physio_leben.png"
+        src="/images/logo_physio_leben.webp"
         alt="Physioleben"
         width={160}
         height={40}

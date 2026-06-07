@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand + CTA */}
           <div className="flex flex-col gap-5">
             <Image
-              src="/images/logo_physio_leben.png"
+              src="/images/logo_physio_leben.webp"
               alt="Physioleben"
               width={100}
               height={20}
