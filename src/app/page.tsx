@@ -15,7 +15,7 @@ export default function Home() {
               <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div className="w-12 h-0.5 rounded-full bg-secondary-500" />
                 <span className="text-base font-semibold tracking-widest uppercase text-secondary-500">
-                  Willkommen bei Physioleben
+                  Physiotherapie in Selm
                 </span>
               </div>
               <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-primary-600 leading-tight">
